@@ -61,7 +61,7 @@ const Table2 = () => {
 
         <div className="flex flex-wrap gap-4 mt-5">
           <button
-            onClick={() => setValue("Gryffindor")}
+            onClick={() => setValue("Gryffindor 🦁")}
             className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 
                       hover:text-black hover:border hover:bg-white"
           >
@@ -69,7 +69,7 @@ const Table2 = () => {
           </button>
 
           <button
-            onClick={() => setValue("Hufflepuff")}
+            onClick={() => setValue("Hufflepuff 🦡")}
             className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 
                       hover:text-black hover:border hover:bg-white"
           >
@@ -77,7 +77,7 @@ const Table2 = () => {
           </button>
 
           <button
-            onClick={() => setValue("Ravenclaw")}
+            onClick={() => setValue("Ravenclaw 🦅")}
             className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 
                       hover:text-black hover:border hover:bg-white"
           >
@@ -85,7 +85,7 @@ const Table2 = () => {
           </button>
 
           <button
-            onClick={() => setValue("Slytherin")}
+            onClick={() => setValue("Slytherin 🐍")}
             className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 
                       hover:text-black hover:border hover:bg-white"
           >
