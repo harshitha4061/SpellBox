@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import {db} from "../config/firebase"
-import {updateDoc,doc,getDoc} from "firebase/firestore";
+import { db } from "../config/firebase";
+import { updateDoc, doc, getDoc } from "firebase/firestore";
 
-const Header = () => {
+const Header = ({ updateHouseCounts }) => {
   const [h, setH] = useState("");
 
   const sortHouse = async () => {
@@ -18,14 +18,18 @@ const Header = () => {
 
     if (docSnap.exists()) {
       await updateDoc(docRef, {
-        [house]: docSnap.data()[house] + 1, 
+        [house]: docSnap.data()[house] + 1,
       });
-      window.location.reload();
+
+      if (updateHouseCounts) {
+        const updatedSnap = await getDoc(docRef);
+        updateHouseCounts(updatedSnap.data());
+      }
     } else {
       console.error("Document does not exist!");
     }
   };
-    
+
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-4 mt-6">
