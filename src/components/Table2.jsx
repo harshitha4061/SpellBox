@@ -66,7 +66,7 @@ const Table2 = () => {
                 </table>
             </div>
 
-            <div className="flex flex-wrap gap-4 mt-5">
+            <div className="flex flex-wrap gap-4 mt-5 justify-center">
                 <button onClick={() => setValue("Gryffindor 🦁")} className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 hover:text-black hover:border hover:bg-white">Gryffindor 🦁</button>
                 <button onClick={() => setValue("Hufflepuff 🦡")} className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 hover:text-black hover:border hover:bg-white">Hufflepuff 🦡</button>
                 <button onClick={() => setValue("Ravenclaw 🦅")} className="border rounded-2xl text-lg w-32 bg-black text-white px-4 py-2 hover:text-black hover:border hover:bg-white">Ravenclaw 🦅</button>
